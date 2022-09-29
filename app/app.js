@@ -20,4 +20,12 @@ function show(){
 function close(){
     navMainMenu.style.top = '-100%';
 }
+//from example
+const menuButton = document.querySelector(".closedMenu");
+const menuOverlay = document.querySelector(".openedMenu");
+
+menuButton.addEventListener("click", function () {
+  menuButton.classList.toggle("active");
+  menuOverlay.classList.toggle("open");
+});
 
